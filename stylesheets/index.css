@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+ul {
+    grid-column: 2 / 3;
+    text-align: right;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+    text-align: center;
+    padding: 16px;
+    color: #9D179D;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+li:hover {
+    color: #F9A82E;
+}
+
+#brand_title {
+    padding-top: 5px;
+    grid-column: 1 / 2;
+    text-align: center;
+    color: #9D179D;
+}
+
+#brand_title:hover {
+    color: #F9A82E;
+}
