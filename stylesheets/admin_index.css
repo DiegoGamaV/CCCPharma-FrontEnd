@@ -26,10 +26,11 @@ hr {
 
 main {
     grid-area: main;
+    display: grid;
     grid-template-columns: 1fr 2fr;
 }
 
-#link_list {
+ul#link_list {
     margin-right: 15px;
     grid-column: 2 / 3;
     text-align: right;
@@ -37,7 +38,7 @@ main {
     overflow: hidden;
 }
 
-.template_link {
+li.template_link {
     float: right;
     text-align: center;
     padding: 16px;
@@ -49,8 +50,7 @@ main {
     cursor: pointer;
 }
 
-
-.template_link:hover {
+li.template_link:hover {
     color: #F9A82E;
 }
 
@@ -79,6 +79,37 @@ a:hover {
 
 aside {  
     grid-column: 1 / 2;
+    background-color: #9D179D;
+}
+
+aside > hr {
+    margin: 5px;
+    margin-left: 10px;
+    margin-right: 16px;
+}
+
+ul#admin_options {
+    text-align: justify;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.admin_option { 
+    padding: 5px;
+    margin-left: 8px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+li.admin_option {
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer; 
+}
+
+li.admin_option:hover {
+    background-color: #F9A82E;
 }
 
 #main_content {
@@ -86,6 +117,7 @@ aside {
 }
 
 footer {
+    padding: 8px;
     grid-area: footer;
     text-align: center;
     color: #b3b3b3;
